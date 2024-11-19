@@ -8,6 +8,4 @@ fazer testes dos metodos que estão dando erro:
       - todos estao na classe gerenciador ja com o tratamento
    
 implementar as ultimas lógicas que faltaram 
-  - polimorfismo
   - lista ou pilha
-  - herança 
