@@ -111,39 +111,24 @@ public class Gerenciador {
         }
     }
 
-    public void salvarDados() {
-        BufferedWriter writer = null;
-        try {
-            FileOutputStream fos = new FileOutputStream("dados.txt");
-            OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-            writer = new BufferedWriter(osw);
-
+    public void escreverDados() {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("dados.txt"), "UTF-8"))) {
             writer.write("Depósitos:\n");
             for (Deposito deposito : depositos) {
                 writer.write(deposito.toString() + "\n");
             }
-
+    
             writer.write("\nClientes:\n");
             for (Cliente cliente : clientes) {
                 writer.write(cliente.toString() + "\n");
             }
-
+    
             writer.write("\nItens Pendentes:\n");
             for (Item item : itensPendentes) {
                 writer.write(item.toString() + "\n");
             }
-
-            System.out.println("Dados salvos com sucesso no arquivo dados.txt.");
         } catch (IOException e) {
-            System.out.println("Erro ao salvar dados no arquivo: " + e.getMessage());
-        } finally {
-            try {
-                if (writer != null) {
-                    writer.close();
-                }
-            } catch (IOException e) {
-                System.out.println("Erro ao fechar o arquivo: " + e.getMessage());
-            }
+            e.printStackTrace();
         }
     }
 

@@ -145,11 +145,28 @@ public class Gerenciador {
 
     public void carregarDadosSalvos() {
         try {
-            System.out.println("Dados carregados com sucesso.");
+            System.out.println("Dados carregados com sucesso.\n");
+    
+            System.out.println("Depósitos:");
+            for (Deposito deposito : depositos) {
+                System.out.println(deposito);
+            }
+    
+            System.out.println("\nClientes:");
+            for (Cliente cliente : clientes) {
+                System.out.println(cliente);
+            }
+    
+            System.out.println("\nItens Pendentes:");
+            for (Item item : itensPendentes) {
+                System.out.println(item);
+            }
+            
         } catch (Exception e) {
-            System.out.println("Erro ao carregar dados salvos: " + e.getMessage());
+            System.out.println("Erro ao carregar dados: " + e.getMessage());
         }
     }
+    
 
     public void finalizarSistema() {
         try {
