@@ -1,33 +1,26 @@
 package Entities;
-public class Perecivel implements Categoria {
+
+import Enum.Situacao;
+
+public class Perecivel extends Item implements Categoria{
     private String origem;
-    private int tempoMaximoValidade;
+    private String tempoMaximoValidade;
 
-    public Perecivel(String origem, int tempoMaximoValidade) {
+    public Perecivel(String codigo, String descricao, int volume, double valorDeclarado, Situacao situacao, String origem, String tempoMaximoValidade) {
+        super(codigo, descricao, volume, valorDeclarado, situacao); 
         this.origem = origem;
-        this.tempoMaximoValidade = tempoMaximoValidade;
-    }
-
-    public String getOrigem() {
-        return origem;
-    }
-
-    public void setOrigem(String origem) {
-        this.origem = origem;
-    }
-
-    public int getTempoMaximoValidade() {
-        return tempoMaximoValidade;
-    }
-
-    public void setTempoMaximoValidade(int tempoMaximoValidade) {
         this.tempoMaximoValidade = tempoMaximoValidade;
     }
 
     @Override
-    public String getDescricao() {
-        return 
-        "ITEM PERECÍVEL" + 
+    public String getDescricao(){
+        return "Perecivel";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+        "\nINFORMAÇÕES DO ITEM PERECÍVEL" + 
             "\nOrigem: " + origem + 
             "\nValidade: " + tempoMaximoValidade + "dias.";
     }

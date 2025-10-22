@@ -1,0 +1,25 @@
+Depósitos:
+
+INFORMAÇÕES DO DEPOSITO
+Codigo: 0
+Nome: dsklfm
+Cidade: dslkfmds
+Endereco: sdlfmsdmf1
+Capacidade Maxima: 5
+ITENS ARMAZENADOS
+
+
+ITENS ARMAZENADOS
+
+INFORMAÇÕES DO ITEM
+Codigo: 2
+Descricao: sadasdsadasdsadsad
+Cliente: 1
+Volume: 1
+valorDeclarado: 2.0
+Situacao: Retirado
+
+INFORMAÇÕES DO ITEM PERECÍVEL
+Origem: dsasa
+Validade: sadsadsadias.
+Itens Pendentes:

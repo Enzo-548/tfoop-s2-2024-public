@@ -1,11 +1,6 @@
-falta fazer a implementação de uma interface gráfica usando Swing, a ideia é:
-  - uma classe apenas para a inteface, usando o layout ja pré estabelecido na classe App que faz contato com o usuario do programa
+##tfoop-s2-2024
 
-fazer testes dos metodos que estão dando erro: 
-  - metodo para verificar os produtos
-  - metodo para listar os produtos por ordem
-  - metodo para modificar os produtos
-      - todos estao na classe gerenciador ja com o tratamento
-   
-implementar as ultimas lógicas que faltaram 
-  - lista ou pilha
+Trabalho final de programação orientada a objetos, aqui o objetivo foi desenvolver um sistema
+abstrato de armazenamento de itens para aplicar os conceitos fundamentais aprendidos em POO. Foram
+aplicados oito módulos funcionais imitando um CRUD em java, com operações de cadastro, listagem, remoção
+de itens, e read/write em um arquivo.
